@@ -1,0 +1,68 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30-sep-2021, 18:23:37
+    Author     : Adonay
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: sans-serif;
+}
+
+/* CABECERA HORIZONTAL */
+header{
+    background-color: #E9ECEF;
+    width: 100%;
+    position: static;
+    top: 0;
+    overflow: auto;
+    display: block;
+    border: 1px solid #CED4DA;
+    both: clear;
+}
+
+header button {
+    border: none;
+    float: right;
+}
+
+/* MENU VERTICAL*/
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #00498D;
+    position: absolute;
+    height: 100%;
+    overflow: auto;
+    
+    
+}
+
+nav li a {
+    font-family: sans-serif;
+    display: block;
+    color: #FFF;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid #FFF;
+}
+
+nav li a.active {
+    background-color: #03548B;
+    color: white;
+}
+
+nav li a:hover:not(.active) {
+    z-index:1;
+    filter:alpha(opacity=80);
+    -moz-opacity:.80;
+    opacity:.80;
+}
